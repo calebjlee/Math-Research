@@ -69,7 +69,7 @@ Suppose `X` is a finitely generated subset of `ℤ` that generates `ℤ`, with `
   M = ( (x<sub>1</sub> + x<sub>2</sub>) / 2 ) * x<sub>1</sub> + ( (x<sub>2</sub> + x<sub>3</sub>) / 2 ) * x<sub>2</sub> + ... + ( (x<sub>k-1</sub> + x<sub>k</sub>) / 2 ) * x<sub>k-1</sub> + x<sub>k</sub>
 </div>
 
-where \(x_i\) is the \(i\)-th term when we order `X`.
+where \(x<sub>i</sub>\) is the \(i\)-th term when we order `X`.
 
 ### Recurrence Relation
 
@@ -82,10 +82,10 @@ For all \( n > M \):
 
 #### Step 3: Pseudocode
 
-Given the ordered generating set \( X = \{x₁, x₂, ..., xₖ\} ⊆ ℤ \), the word length \( |n|_X \) of any integer \( n ∈ ℤ \) can be computed as follows:
+Given the ordered generating set \( X = \{x₁, x₂, ..., xₖ\} ⊆ ℤ \), the word length \( |n|<sub>X</sub> \) of any integer \( n ∈ ℤ \) can be computed as follows:
 
 - **Input**: \( X = \{x₁, x₂, ..., xₖ\} \) (ordered set), \( n \) (target integer) 
-- **Output**: \( |n|_X \) (word-length of \( n \) with respect to \( X \))
+- **Output**: \( |n|<sub>X</sub> \) (word-length of \( n \) with respect to \( X \))
 
 ### Example Calculations
 
@@ -99,29 +99,29 @@ Given the ordered generating set \( X = \{x₁, x₂, ..., xₖ\} ⊆ ℤ \), th
   
   - **Precompute word-lengths for n ≤ 16**.
 
-  - **Compute `|11|_X`**:
+  - **Compute \( |11|<sub>X</sub> \)**:
     - Since `11 ≤ 16`, we find:
       ```
       11 = 2 + 7 + 2
       ```
-      So, \( |11|_X = 3 \).
+      So, \( |11|<sub>X</sub> = 3 \).
 
-  - **Compute `|5|_X`**:
+  - **Compute \( |5|<sub>X</sub> \)**:
     - Since `5 ≤ 16`, we find:
       ```
       5 = 7 - 2
       ```
-      So, \( |5|_X = 2 \).
+      So, \( |5|<sub>X</sub> = 2 \).
 
 - **Example 2**: For \( n > M \), say `n = 20`:
   - Since `20 > 16`, apply the recurrence relation:
     \[
-    |20|_X = |20 - 7|_X + 1 = |13|_X + 1
+    |20|<sub>X</sub> = |20 - 7|<sub>X</sub> + 1 = |13|<sub>X</sub> + 1
     \]
   
-  - Assuming we've precomputed \( |13|_X = 3 \), then:
+  - Assuming we've precomputed \( |13|<sub>X</sub> = 3 \), then:
     \[
-    |20|_X = 3 + 1 = 4
+    |20|<sub>X</sub> = 3 + 1 = 4
     \]
 
 ## Applications
