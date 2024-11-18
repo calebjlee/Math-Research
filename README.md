@@ -132,3 +132,10 @@ This algorithm is useful for exploring combinatorial properties of integers and 
 
 - **Bézout's Lemma**: Fundamental in number theory, stating that if `a` and `b` are integers with gcd `d`, then there exist integers `x` and `y` such that `a*x + b*y = d`.
 - **Euclid's Lemma**: If a prime `p` divides the product of two integers `a*b`, then `p` divides `a` or `p` divides `b`.
+
+# Metric on 4x4 Heisenburg Groups (H(4))
+
+## Background
+
+
+
